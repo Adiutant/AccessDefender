@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Administration</class>
+ <widget class="QWidget" name="Administration">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1267</width>
+    <height>788</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,5">
+   <item>
+    <widget class="QTreeWidget" name="treeWidget">
+     <column>
+      <property name="text">
+       <string>Управление</string>
+      </property>
+     </column>
+     <item>
+      <property name="text">
+       <string>Просмотр событий</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Управление пользователями</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="page">
+         <widget class="QListWidget" name="armList">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>221</width>
+            <height>611</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="logsField">
+          <property name="geometry">
+           <rect>
+            <x>240</x>
+            <y>0</y>
+            <width>621</width>
+            <height>601</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_2">
+         <widget class="QTableWidget" name="usersTable">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>20</y>
+            <width>1021</width>
+            <height>421</height>
+           </rect>
+          </property>
+          <column>
+           <property name="text">
+            <string>Имя пользователя</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Пароль</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Фамилия</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Отчество</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Имя</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Узел</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Роль</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Номер тел.</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Почта</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Описание</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Срок действия пароля</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Попытки входа</string>
+           </property>
+          </column>
+         </widget>
+         <widget class="QPushButton" name="saveTable">
+          <property name="geometry">
+           <rect>
+            <x>930</x>
+            <y>450</y>
+            <width>88</width>
+            <height>34</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Сохранить</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="addRowButton">
+          <property name="geometry">
+           <rect>
+            <x>630</x>
+            <y>450</y>
+            <width>141</width>
+            <height>34</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Добавить строку</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="deleteRowButton">
+          <property name="geometry">
+           <rect>
+            <x>780</x>
+            <y>450</y>
+            <width>141</width>
+            <height>34</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Удалить строку</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
